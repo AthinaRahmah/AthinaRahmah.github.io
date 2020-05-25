@@ -1,344 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
-
-img {
-  max-width: 85%;
-  height: auto;
-}
-
-
-a:link {
-  text-decoration: none;
-  color: white;
-}
-
-a:visited {
-  text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  text-decoration: none;
-  color: white;
-}
-
-a:active {
-  text-decoration: none;
-  color: white;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arimo', sans-serif;
-    
-
-}
-
-html {
-    font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 body {
-    background-color: linear-gradient( #000000, #400000, #800000,#004040);
+  background-color: linear-gradient(#575fcf, #4bcffa, #3c40c6,#0fbcf9);
 }
 
 section {
     width: 100%;
     height: 100vh;
     color: #fff;
-    background: linear-gradient(-45deg, #000000, #400000, #800000,#004040);
-    background-size: 500% 500%;
+    background: linear-gradient(-45deg, #575fcf, #4bcffa, #3c40c6,#0fbcf9);
+    background-size: 400% 400%;
     position: relative;
     animation: change 10s ease-in-out infinite;
 
 }
 
-
-.jancok {
-    display: inline-flex;
-    letter-spacing: 5px;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  background-color: #lelele;
 }
 
-
-.textme {
-    border: 2px solid #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 5rem 10rem;
-    cursor: pointer;
-    border-radius: 20px;
-}
-
-.textme p {
-    font-size: 16px;
-    text-align: center;
-    font-family: 'Arimo', sans-serif;
-}
-
-<style>
-.marginauto {
-    margin: 10px auto 20px;
-    display: block;
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 h1 {
-    font-family: 'Arimo', sans-serif;
-    font-size: 5rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-}
-
-.container img {
-    vertical-align: center;
-}
-
-h1:hover {
-    color: dodgerblue;
-}
-
-
-.wrap {
-    padding: 40px;
-    text-align: center;
-  }
-  .btn {
-    background: #428bca;
-    border: #357ebd solid 1px;
-    border-radius: 3px;
-    color: #fff;
-    display: inline-block;
-    font-size: 14px;
-    padding: 8px 15px;
-    text-decoration: none;
-    text-align: center;
-    min-width: 60px;
-    position: relative;
-    transition: color 0.1s ease;
-    /* top: 40em;*/
-  }
-  .btn:hover {
-    background: #357ebd;
-  }
-  .btn.btn-big {
-    font-size: 18px;
-    padding: 15px 20px;
-    min-width: 100px;
-    border-radius: 20px;
-
-  }
-  .btn-close {
-    color: #aaa;
-    font-size: 30px;
-    text-decoration: none;
-    position: absolute;
-    right: 5px;
-    top: 0;
-  }
-  .btn-close:hover {
-    color: #919191;
-  }
-  .modal:before {
-    content: "";
-    display: none;
-    background: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
-  }
-  .modal:target:before {
-    display: block;
-  }
-  .modal:target .modal-dialog {
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
-    top: -1%;
-    left: 200px;
-    width: 100%;
-  }
-  .modal-dialog {
-    background: #fefefe;
-    color:#23A6D5;
-    border: #333 solid 1px;
-    border-radius: 5px;
-    margin-left: -200px;
-    position: fixed;
-    left: 50%;
-    top: -100%;
-    z-index: 11;
-    width: 360px;
-    -webkit-transform: translate(0, -500%);
-    -ms-transform: translate(0, -500%);
-    transform: translate(0, -500%);
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-    -moz-transition: -moz-transform 0.3s ease-out;
-    -o-transition: -o-transform 0.3s ease-out;
-    transition: transform 0.3s ease-out;
-  }
-  .modal-body {
-    padding: 20px;
-  }
-  .modal-header,
-  .modal-footer {
-    padding: 10px 20px;
-  }
-  .modal-header {
-    border-bottom: #eee solid 1px;
-  }
-  .modal-header h2 {
-    font-size: 20px;
-  }
-  .modal-footer {
-    border-top: #eee solid 1px;
-    text-align: right;
-  }
-  /*ADDED TO STOP SCROLLING TO TOP*/
-  #close {
-    display: none;
-  }
   
-/*MODAL KEDUA FUNGSI NYA SAMA KEK MODAL SATU*/
-
-
-.wrap2 {
-    padding: 40px;
-    text-align: center;
-  }
-  .btn2 {
-    background: #428bca;
-    border: #357ebd solid 1px;
-    border-radius: 3px;
-    color: #fff;
-    display: inline-block;
-    font-size: 14px;
-    padding: 8px 15px;
-    text-decoration: none;
-    text-align: center;
-    min-width: 60px;
-    position: relative;
-    transition: color 0.1s ease;
-    /* top: 40em;*/
-  }
-  .btn2:hover {
-    background: #357ebd;
-  }
-  .btn.btn-big2 {
-    font-size: 18px;
-    padding: 15px 20px;
-    min-width: 100px;
-    border-radius: 20px;
-  }
-  .btn-close2 {
-    color: #aaa;
-    font-size: 30px;
-    text-decoration: none;
-    position: absolute;
-    right: 5px;
-    top: 0;
-  }
-  .btn-close2:hover {
-    color: #919191;
-  }
-  .modal2:before {
-    content: "";
-    display: none;
-    background: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
-  }
-  .modal2:target:before {
-    display: block;
-  }
-  .modal2:target .modal-dialog2 {
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
-    top: -1%;
-    left: 200px;
-    width: 100%;
-  }
-  .modal-dialog2{
-    background: #fefefe;
-    color:#23A6D5;
-    border: #333 solid 1px;
-    border-radius: 5px;
-    margin-left: -200px;
-    position: fixed;
-    left: 50%;
-    top: -100%;
-    z-index: 11;
-    width: 360px;
-    -webkit-transform: translate(0, -500%);
-    -ms-transform: translate(0, -500%);
-    transform: translate(0, -500%);
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-    -moz-transition: -moz-transform 0.3s ease-out;
-    -o-transition: -o-transform 0.3s ease-out;
-    transition: transform 0.3s ease-out;
-  }
-  .modal-body2 {
-    padding: 20px;
-  }
-  .modal-header2,
-  .modal-footer2 {
-    padding: 10px 20px;
-  }
-  .modal-header2 {
-    border-bottom: #eee solid 1px;
-  }
-  .modal-header2 h2 {
-    font-size: 20px;
-  }
-  .modal-footer2 {
-    border-top: #eee solid 1px;
-    text-align: right;
-  }
-  /*ADDED TO STOP SCROLLING TO TOP*/
-  #close2 {
-    display: none;
-  }
-
-@keyframes change {
-    
-0% {
-    background-position: 0 50%;
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  writing-mode: vertical-rl;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size:85px
 }
- 50%{
-     background-position: 100% 50%;
- }
- 100% {
-     background-position: 0 50%;
- }
-} 
+.card {
+  margin: 4px;
+  margin-top: 50px;
+  display: flex;
+  position: relative;
+  height: 400px;
+  width: 300px;
+  border-radius: 0.3rem;
+  box-shadow: 2px 2px 10px rgba(0,0, 0, 0.322);
+  transition: 0.5s ease-out;
+  background: -webkit-linear-gradient(top left, #00c6ff, #0072ff);
+  cursor: pointer;
+}
 
-/*mediaquery jancok */
+.card:hover{
+  transform: translateX(-20px);
+}
 
- @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+
+img{
+  border-radius: 0.3rem;
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* remove extra space below image */
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.loader div {
+  width: 25%;
+  height: 100%;
+  background: #008eff;
+  transform: scaleY(0);
+  animation: animate 2s ease-in-out infinite;
+}
+
+.loader div:nth-child(even){
+  background: #007eff;
+}
+
+.loader div:nth-child(1){
+  animation-delay: 0s;
+}
+
+.loader div:nth-child(2){
+  animation-delay: 0.25s;
+}
+
+.loader div:nth-child(3){
+  animation-delay: 0.5s;
+}
+
+.loader div:nth-child(4){
+  animation-delay: 0.75s;
+}
+
+.loader div:nth-child(1){
+  animation-delay: 0s;
+}
+
+@keyframes animate {
+  0%{
+    transform-origin: top;
+    transform: scaleY(0);
   }
-  .textme {
-      width:95%;
+  25%{
+    transform-origin: top;
+    transform: scaleY(1);
   }
-  .btn.btn-big, .btn.btn-big2  {
-      margin-left: -60px;
-  } 
-   .jancuk {
-     width:100%;
-     
-   }
-  
+  75%{
+    transform-origin: top;
+    transform: scaleY(2);
+  }
+  100%{
+    transform-origin: top;
+    transform: scaleY(3);
+  }
 }
